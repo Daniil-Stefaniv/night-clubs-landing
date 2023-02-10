@@ -1,0 +1,140 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: skyblue;
+}
+
+.container {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slider-btn {
+    padding: 20px 30px;
+    border-radius: 50%;
+    background: rgb(107, 91, 255);
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 32px;
+
+    transition: background-color .3s ease-in-out;
+
+    user-select: none;
+}
+
+.slider-btn:hover {
+    background-color: rgb(78, 58, 255);
+}
+
+.sider_slides-container {
+    border-radius: 15px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+
+.slider-slide {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 64px;
+    color: #fff;
+    user-select: none;
+}
+
+.slide-one {
+    background: orangered;
+}
+
+.slide-two {
+    background: olivedrab;
+}
+
+.slide-three {
+    background: blueviolet;
+}
+
+.slide-four {
+    background: palevioletred;
+}
+
+.slide-five {
+    background: greenyellow;
+}
+
+.slide-six {
+    background: royalblue;
+}
+
+.slide-seven {
+    background: brown;
+}
+
+.slide-eight {
+    background: tomato;
+}
+
+.slide-nine {
+    background: palegreen;
+}
+
+.slide-ten {
+    background: darkturquoise;
+}
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.pagination_item {
+    cursor: pointer;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(107, 91, 255);
+    transition: outline .1s ease-in-out;
+}
+
+.pagination_item:hover {
+    outline: 5px solid rgb(107, 91, 255);
+    outline-offset: -1px;
+}
+
+.pagination_item--selected {
+    background: rgb(255, 63, 63);
+}
+
+.pagination_item--selected:hover {
+    outline: 5px solid rgb(255, 63, 63);
+    outline-offset: -1px;
+}
